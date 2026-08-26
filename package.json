@@ -1,0 +1,72 @@
+{
+  "name": "@lktools/numbers",
+  "version": "0.1.0",
+  "description": "Number utilities for Sri Lankan developers.",
+  "license": "MIT",
+  "author": "LKTools",
+  "type": "module",
+
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+
+  "files": [
+    "dist"
+  ],
+
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "playground": "tsx playground.ts",
+
+    "test": "vitest run",
+    "test:watch": "vitest",
+
+    "typecheck": "tsc --noEmit",
+
+    "check": "pnpm typecheck && pnpm test",
+
+    "prepublishOnly": "pnpm check && pnpm build"
+  },
+
+  "keywords": [
+    "numbers",
+    "sinhala",
+    "sri-lanka",
+    "number-to-words",
+    "typescript",
+    "lktools"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lktools/numbers.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/lktools/numbers/issues"
+  },
+
+  "homepage": "https://github.com/lktools/numbers",
+
+  "engines": {
+    "node": ">=18"
+  },
+
+  "packageManager": "pnpm@10.0.0",
+
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.11"
+  }
+}
