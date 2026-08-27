@@ -38,7 +38,7 @@ export const TENS_PREFIX: Record<number, string> = {
   40: "හතළිස්",
   50: "පනස්",
   60: "හැට",
-  70: "හැත්ත",
+  70: "හැත්තෑ",
   80: "අසූ",
   90: "අනූ",
 };
@@ -100,4 +100,3 @@ export const THOUSANDS_BASE_PREFIX: Record<number, string> = {
   18: "දහඅට",
   19: "දහනව",
 };
-

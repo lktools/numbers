@@ -49,9 +49,9 @@ describe("toSinhala (0 to 999)", () => {
       expect(toSinhala(21)).toBe("විසි එක");
       expect(toSinhala(35)).toBe("තිස් පහ");
       expect(toSinhala(42)).toBe("හතළිස් දෙක");
-      expect(toSinhala(71)).toBe("හැත්ත එක");
-      expect(toSinhala(75)).toBe("හැත්ත පහ");
-      expect(toSinhala(79)).toBe("හැත්ත නවය");
+      expect(toSinhala(71)).toBe("හැත්තෑ එක");
+      expect(toSinhala(75)).toBe("හැත්තෑ පහ");
+      expect(toSinhala(79)).toBe("හැත්තෑ නවය");
       expect(toSinhala(99)).toBe("අනූ නවය");
     });
   });
