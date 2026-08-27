@@ -32,7 +32,7 @@ describe("large number options and scale systems", () => {
       expect(toSinhala(100001, { style: "laksha" })).toBe("එක්ලක්ෂ එක");
       expect(toSinhala(125000, { style: "laksha" })).toBe("එක්ලක්ෂ විසිපන්දහස");
       expect(toSinhala(125250, { style: "laksha" })).toBe("එක්ලක්ෂ විසිපන්දහස් දෙසිය පනහ");
-      expect(toSinhala(999999, { style: "laksha" })).toBe("ලක්ෂ නවය අනූනවදහස් නවසිය අනූ නවය");
+      expect(toSinhala(999999, { style: "laksha" })).toBe("නවලක්ෂ අනූනවදහස් නවසිය අනූ නවය");
     });
   });
 

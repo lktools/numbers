@@ -142,6 +142,11 @@ function formatScaledNumber(
         return `${scale.prefix} ${countStr}`;
       }
 
+      if (scale.value === 100_000) {
+        const lakhPrefix = `${getThousandsPrefix(count)}ලක්ෂ`;
+        return `${lakhPrefix} ${subConvert(remainder)}`;
+      }
+
       return `${scale.prefix} ${countStr} ${subConvert(remainder)}`;
     }
   }
