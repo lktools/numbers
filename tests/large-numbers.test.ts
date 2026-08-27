@@ -29,9 +29,9 @@ describe("large number options and scale systems", () => {
     });
 
     it("converts laksha with remainders", () => {
-      expect(toSinhala(100001, { style: "laksha" })).toBe("ලක්ෂ එක");
-      expect(toSinhala(125000, { style: "laksha" })).toBe("ලක්ෂ විසිපන්දහස");
-      expect(toSinhala(125250, { style: "laksha" })).toBe("ලක්ෂ විසිපන්දහස් දෙසිය පනහ");
+      expect(toSinhala(100001, { style: "laksha" })).toBe("එක්ලක්ෂ එක");
+      expect(toSinhala(125000, { style: "laksha" })).toBe("එක්ලක්ෂ විසිපන්දහස");
+      expect(toSinhala(125250, { style: "laksha" })).toBe("එක්ලක්ෂ විසිපන්දහස් දෙසිය පනහ");
       expect(toSinhala(999999, { style: "laksha" })).toBe("ලක්ෂ නවය අනූනවදහස් නවසිය අනූ නවය");
     });
   });
@@ -98,14 +98,14 @@ describe("large number options and scale systems", () => {
           style: "laksha",
           largeNumberSystem: "sinhala",
         })
-      ).toBe("ලක්ෂ විසිපන්දහස");
+      ).toBe("එක්ලක්ෂ විසිපන්දහස");
 
       expect(
         toSinhala(125000, {
           style: "laksha",
           largeNumberSystem: "international",
         })
-      ).toBe("ලක්ෂ විසිපන්දහස");
+      ).toBe("එක්ලක්ෂ විසිපන්දහස");
     });
   });
 });

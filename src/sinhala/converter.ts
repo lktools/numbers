@@ -134,7 +134,8 @@ function formatScaledNumber(
       }
 
       if (count === 1 && remainder > 0) {
-        return `${scale.prefix} ${subConvert(remainder)}`;
+        const prefix = scale.onePrefix ?? scale.prefix;
+        return `${prefix} ${subConvert(remainder)}`;
       }
 
       if (count > 1 && remainder === 0) {

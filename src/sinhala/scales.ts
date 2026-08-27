@@ -2,6 +2,7 @@ export interface ScaleItem {
   value: number;
   singular: string;
   prefix: string;
+  onePrefix?: string;
 }
 
 export const INTERNATIONAL_SCALES: ScaleItem[] = [
@@ -47,5 +48,6 @@ export const SINHALA_SCALES: ScaleItem[] = [
     value: 100_000,
     singular: "ලක්ෂය",
     prefix: "ලක්ෂ",
+    onePrefix: "එක්ලක්ෂ",
   },
 ];
