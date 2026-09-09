@@ -25,7 +25,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "playground": "tsx playground.ts",
+    "playground": "npx tsx playground/index.ts",
+    "playground:variations": "npx tsx playground/variations.ts",
 
     "test": "vitest run",
     "test:watch": "vitest",
